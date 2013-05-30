@@ -1,0 +1,15 @@
+/* Additional CSS for thermal. */
+
+canvas {
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+#cv1 {background:url('http://people.moreheadstate.edu/fs/m.schack/graphpaper1.gif');}
+
+#options img {height:100px;}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load i18n sizeformat %}
+{% block title %}{% trans "Build A Template" %}{% endblock %}
+
+{%  block css %}
+    {{ block.super }}
+
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}thermal/css/thermal.css">
+
+    <script src='{{ STATIC_URL }}thermal/js/kinetic-v4.5.2.min.js' type='text/javascript' charset='utf-8'></script>
+
+{%  endblock %}
+
+
+{% block page_header %}
+  {% include "horizon/common/_page_header.html" with title=_("Build A Template") %}
+{% endblock page_header %}
+
+{% block main %}
+    <div id="options">
+        <img id="db1" src="http://png-2.findicons.com/files/icons/989/ivista_2/128/database_3.png" />
+        <img id="srv1" src="http://cdn5.iconfinder.com/data/icons/HDRV/128/Graphite_Server_B.png" />
+
+    </div>
+    <div id="cv1"></div>
+
+    <div id="json"></div>
+
+{% endblock %}
+
+
+
+
+{%  block js %}
+    {{ block.super }}
+
+    <script src='{{ STATIC_URL }}thermal/js/thermal.js' type='text/javascript' charset='utf-8'></script>
+{%  endblock %}
